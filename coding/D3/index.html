@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>magister</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/secret.jpg" type="image/jpg">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/styleD3.css">
+
+        <!-- chart.jsライブラリ -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+        <style>
+
+          /* 軸の設定 */
+          .axis path, .axis line{
+            fill: none;
+            stroke: black;
+            stroke-width: 0.5px;
+          }
+          .axis text{
+            font-size: 10px;
+          }
+
+        </style>
+
+        <!--CDN(Contemts Delivery Network)を介して、D3.jsライブラリコードを読み込む -->
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> <!-- (公式サイトより) -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script> (cdnjsより)-->
+
+    </head>
+    <body>
+        <div id="mainBody">
+          <div id="chart1">
+            <h2>意識バブルチャート</h2>
+            <svg id="bubble"></svg>
+          </div>
+
+          <div id="chart6">
+            <h2>バイオグラフィー</h2>
+            <svg id="biography"></svg>
+          </div>
+
+
+          <div id="chart2">
+            <h2>総合レーダーチャート</h2>
+            <canvas id="radarChart" height="600px" width="600px"></canvas>
+
+
+          </div>
+
+          <div id="chart3">
+            <h2>重要度レーダーチャート</h2>
+            <svg id="radar2"></svg>
+
+          </div>
+
+          <div id="chart4">
+            <h2>重要度まとめ棒グラフ</h2>
+            <svg id="aaa"></svg>
+          </div>
+
+          <div id="chart5">
+            <h2>例:本◯◯平レーダーチャート</h2>
+            <canvas id="honndaChart" height="600px" width="600px"></canvas>
+
+          </div>
+
+        </div>
+        <script src="./js/bubbleChart.js"></script>
+        <script src="./js/biography.js"></script>
+        <script src="./js/radarChart.js"></script>
+        <script src="./js/honnda.js"></script>
+    </body>
+</html>

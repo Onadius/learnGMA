@@ -1,0 +1,25 @@
+
+/* -------   オタクエディタにしたった     ------- */
+@background-img-path: "../../../../../../Users/miyawaki/Desktop/main.jpg";
+
+.pane {
+  background: url(@background-img-path);
+  background-size: cover;
+  /*
+    background-size の設定について
+      auto: 原寸大
+      cover: 左右比固定で拡大縮小(？) よくわかってない……。
+      contain: 画像がエディタ画面内に収まるように拡大縮小
+  */
+}
+
+.editor {
+  background: rgba(0, 0, 0, .50);
+}
+
+.vertical {
+  .pane {
+    // タブバー上部の空白修正
+    padding: 0;
+  }
+}
